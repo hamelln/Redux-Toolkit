@@ -13,16 +13,16 @@ export const colorSlice = createSlice({
   name: "color",
   initialState,
   reducers: {
-    increment: (state) => {
+    changeBlue: (state) => {
       state.value = "blue";
     },
-    decrement: (state) => {
+    changeBlack: (state) => {
       state.value = "black";
     },
   },
 });
 
-export const { increment, decrement } = colorSlice.actions;
+export const { changeBlue, changeBlack } = colorSlice.actions;
 
 export const selectColor = (state: RootState) => state.color.value;
 
